@@ -19,7 +19,7 @@ If you wish to add a feature to the program, you are also free to modify the one
 ### Mac OS
 *(All the commands listed below have to be run in the terminal application without the dollar sign, which just shows the beginning of the commands. Don't be scared of the command line, you'll have to use it anyways to run the program, and you'll look like a hacker.)*
 
-On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/.
+On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/. I do recommend having Python 3 installed though, since that is what I'm using, so I don't know whether it will work for other versions ¯\_(ツ)_/¯.
 
 Next, you will need to install the Git command in order to clone this repository. To do so, run
 ```
@@ -45,7 +45,7 @@ Firstly, install Python if it isn't installed yet. To check if you have it, you 
 C: \Users\yourusername\directory>python --version
 Python 3.8.3
 ```
-The numbers may change according to which version you have, this isn't important for this specific use of the command.
+The numbers may change according to which version you have, I would recommend installing Python 3 however, because I don't know if everything will work with previous versions ¯\_(ツ)_/¯.
 Next you will need the git command which you can download from this website: https://git-scm.com/download/win. The graphical interface will guide you through the installation.
 
 Now you have all the dependencies needed to copy this repository, but not all to run it yet. You may now navigate to the folder you wish to have your game in with the  ```cd```  command. If you do not know how this works, please watch this video that will inform you about it: https://www.youtube.com/watch?v=zZshUoznlH4. You will need to be able to do this in order to run the program.
@@ -54,11 +54,13 @@ Now you have all the dependencies needed to copy this repository, but not all to
 The running process is the exact same for every Operating System, run:
 ```
 $ cd /path/to/your/directory
-$ python TypeeTypo.py
+$ python3 TypeeTypo.py
 ```
-Each time the program runs, it checks whether you have all necessary packages installed, the first time, it may therefore take up to a minute before launching. Afterwards, the process only takes a second and the output will look like this:
+*Don't put the 3 if you don't have Python version 3.*
+
+Each time the program runs, it checks whether you have all necessary packages installed. The first time, it may therefore take up to a minute before launching. Afterwards, the process only takes a second and the output will look like this:
 ```
-$ python TypeeTypo.py 
+$ python3 TypeeTypo.py 
 [INPUT] You are about to install 7 packages, would you like to proceed (y/n): [LOG] Looking for numpy
 [LOG] numpy is already installed, skipping...
 [LOG] Looking for matplotlib
