@@ -1,4 +1,5 @@
 # Typee-Typo
+<a href="url"><img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Preview1.GIF" align="center" height="720" width="450" ></a>
 ![](Preview1.GIF =1440x900)
 
 ## Introduction
