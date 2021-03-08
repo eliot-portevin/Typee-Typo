@@ -52,3 +52,29 @@ Next you will need the git command which you can download from this website: htt
 Now you have all the dependencies needed to copy this repository, but not all to run it yet. You may now navigate to the folder you wish to have your game in with the  ```cd```  command. If you do not know how this works, please watch this video that will inform you about it: https://www.youtube.com/watch?v=zZshUoznlH4. You will need to be able to do this in order to run the program.
 
 ## Running
+The running process is the exact same for every Operating System, run:
+```
+$ cd /path/to/your/directory
+$ python TypeeTypo.py
+```
+Each time the program runs, it checks whether you have all necessary packages installed, the first time, it may therefore take up to a minute before launching. Afterwards, the process only takes a second and the output will look like this:
+```
+$ python TypeeTypo.py 
+[INPUT] You are about to install 7 packages, would you like to proceed (y/n): [LOG] Looking for numpy
+[LOG] numpy is already installed, skipping...
+[LOG] Looking for matplotlib
+[LOG] matplotlib is already installed, skipping...
+[LOG] Looking for pygame
+[LOG] pygame is already installed, skipping...
+[LOG] Looking for datetime
+[LOG] datetime is already installed, skipping...
+[LOG] Looking for csv
+[LOG] csv is already installed, skipping...
+[LOG] Looking for sys
+[LOG] sys is already installed, skipping...
+[LOG] Looking for random
+[LOG] random is already installed, skipping...
+
+$
+```
+All your scores are saved automatically at Media/score.csv . If you wish to delete a score because you didn't take the test seriously, you can just delete the last line. However, please don't play around with them because as mentionned above, your performances will be the support for my Maturarbeit.
