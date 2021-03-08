@@ -15,6 +15,8 @@ If you wish to add a feature to the program, you are also free to modify the one
 
 ## Installation
 ### Mac OS
+**(All the commands listed below have to be run in the terminal application. Don't be scared, you'll have to use it anyways to run the program.)**
+
 On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/.
 
 Next, you will need to install the Git command in order to clone this repository. To do so, run
