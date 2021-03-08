@@ -1,6 +1,5 @@
 # Typee-Typo
-<a href="url"><img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Preview1.GIF" align="center" height="300" width="480" ></a>
-![](Preview1.GIF =1440x900)
+<a href="url"><img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Preview1.GIF" align="center" height="350" width="540" ></a>
 
 ## Introduction
 The main purpose of Typee Typo is to help people evaluate the evolution of their typing speed. This tool wasn't optimised for regular training, but can be used so if wished. The long term objective would be for me to make my Maturarbeit on this, firstly explaining how I got the program to work, and in a second part analysing the evolution of your performances and comparing them (you won't be put at competition don't worry). Some of the services included so far:
