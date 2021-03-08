@@ -26,9 +26,10 @@ $ git version
 If you don’t have it installed already, it will prompt you to install it.
 If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
 
-Now you can clone this repository (all the files at the top of the page) in your desired directory. To do so, open your terminal and move to the desired path with the ```cd```command. If you do not know how this works, this video explains it well: ***https://www.youtube.com/watch?v=j6vKLJxAKfw***. Next you can run this command to download the repository:
+Now you can clone this repository (all the files at the top of the page) in your desired directory. To do so, open your terminal and move to the desired path with the  ```cd```  command. If you do not know how this works, this video explains it well: https://www.youtube.com/watch?v=j6vKLJxAKfw. Next you can run this command to download the repository:
 ```
 $ git clone https://github.com/eliot-portevin/Typee-Typo.git
-
+```
+You now have all the needed files to run this program in you new Typee-Typo directory! Go to the Running part to see how you can use it now.
 
 ## Running
