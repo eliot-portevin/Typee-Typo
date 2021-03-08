@@ -15,12 +15,14 @@ If you wish to add a feature to the program, you are also free to modify the one
 
 ## Installation
 ### Mac OS
-On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website ***https://www.python.org/downloads/***.
+On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/.
 
 Next, you will need to install the Git command in order to clone this repository. To do so, run
 ```
 $ git version
 ```
+If you don’t have it installed already, it will prompt you to install it.
 
+If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
 
 ## Running
