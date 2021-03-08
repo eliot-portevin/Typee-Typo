@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pygame
+datetime
+csv
+sys
+random
