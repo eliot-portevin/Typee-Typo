@@ -1,4 +1,4 @@
-<center> # Typee-Typo </center>
+# Typee-Typo
 <p align="center">
   <img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Media/Logo.png" />
 </p>
@@ -18,7 +18,7 @@ If you wish to add a feature to the program, you are also free to modify the one
 
 ## Installation
 ### Mac OS
-*(All the commands listed below have to be run in the terminal application without the dollar sign, it just shows the beginning of the commands. Don't be scared of the command line, you'll have to use it anyways to run the program, and you'll look like a hacker.)*
+*(All the commands listed below have to be run in the terminal application without the dollar sign, which just shows the beginning of the commands. Don't be scared of the command line, you'll have to use it anyways to run the program, and you'll look like a hacker.)*
 
 On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/.
 
@@ -38,7 +38,17 @@ You now have all the needed files to run this program in you new Typee-Typo dire
 ### Linux
 If you're running Linux (congrats' because I wouldn't expect any of you to), I'm assuming you know how to use the command line, clone a repository and run a python script, so I'm not including any directions for you. If you're really in a struggle though, just take a look at the MacOS tutorial, it's literaly the same thing. To install git, just run ```sudo apt install git```if you're on a debian-based machine, or ```yay -S git```if you're on Arch (I'm not sure about this one though).
 
-
 ### Windows
+*(All the commands listed below have to be run in the Command Line application without the dollar sign, which just shows the beginning of the commands. Don't be scared of the terminal, you'll have to use it anyways to run the program, and you'll look like a hacker.)*
+
+Firstly, install Python if it isn't installed yet. To check if you have it, you can run ```$ python --version```. If it outputs that python is not a recognised command, then install from this website: https://www.python.org/downloads/windows/ by following their instructions. After that, if you run the previously mentionned command, you should get an output similar to this:
+```
+C: \Users\yourusername\directory>python --version
+Python 3.8.3
+```
+The numbers may change according to which version you have, this isn't important for this specific use of the command.
+Next you will need the git command which you can download from this website: https://git-scm.com/download/win. The graphical interface will guide you through the installation.
+
+Now you have all the dependencies needed to copy this repository, but not all to run it yet. You may now navigate to the folder you wish to have your game in with the  ```cd```  command. If you do not know how this works, please watch this video that will inform you about it: https://www.youtube.com/watch?v=zZshUoznlH4. You will need to be able to do this in order to run the program.
 
 ## Running
