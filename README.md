@@ -13,5 +13,6 @@ If you're struggling with the installation, or if you need any kind of advice fr
 If you wish to add a feature to the program, you are also free to modify the one you have cloned from this repository, and to show it to me when it is fully tested (if it is a good idea of course).
 
 ## Installation
-
+### Mac OS and other UNIX-based systems
+On these Operating Systems, Python is installed by default. If not, or if you wish to have the latest version running, visit their website ***https://www.python.org/downloads/***.
 ## Running
