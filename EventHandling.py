@@ -5,6 +5,7 @@ import GameScreen
 import TypeeTypo
 import csv
 from datetime import date
+from subprocess import call
 pygame.init()
 
 class Wordbanks:
