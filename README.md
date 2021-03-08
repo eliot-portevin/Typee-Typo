@@ -1,4 +1,4 @@
-# Typee-Typo
+<center> # Typee-Typo <center>
 <p align="center">
   <img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Media/Logo.png" />
 </p>
