@@ -15,7 +15,7 @@ If you wish to add a feature to the program, you are also free to modify the one
 
 ## Installation
 ### Mac OS
-**(All the commands listed below have to be run in the terminal application. Don't be scared, you'll have to use it anyways to run the program.)**
+*(All the commands listed below have to be run in the terminal application without the dollar sign, it just shows the beginning of the commands. Don't be scared, you'll have to use it anyways to run the program.)*
 
 On this Operating System, Python is already installed by default. If not, or if you wish to have the latest version running, visit their website https://www.python.org/downloads/.
 
@@ -24,7 +24,11 @@ Next, you will need to install the Git command in order to clone this repository
 $ git version
 ```
 If you don’t have it installed already, it will prompt you to install it.
-
 If you want a more up to date version, you can also install it via a binary installer. A macOS Git installer is maintained and available for download at the Git website, at https://git-scm.com/download/mac.
+
+Now you can clone this repository (all the files at the top of the page) in your desired directory. To do so, open your terminal and move to the desired path with the ```cd```command. If you do not know how this works, this video explains it well: ***https://www.youtube.com/watch?v=j6vKLJxAKfw***. Next you can run this command to download the repository:
+```
+$ git clone https://github.com/eliot-portevin/Typee-Typo.git
+
 
 ## Running
