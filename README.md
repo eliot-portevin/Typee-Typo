@@ -1,5 +1,5 @@
 # Typee-Typo
-<a href="url"><img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Preview1.GIF" align="center" height="350" width="540" ></a>
+<a href="url"><img src="https://github.com/eliot-portevin/Typee-Typo/blob/main/Preview.png" align="center"></a>
 
 *Sorry for the quality of the GIF it's just way too long so Github makes it look lame...*
 ## Introduction
