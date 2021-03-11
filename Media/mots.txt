@@ -50,7 +50,6 @@ carnaval
 fête
 école
 heure
-l'
 calendrier
 cuisine
 chambre
@@ -132,14 +131,12 @@ s'asseoir
 attendre
 bâiller
 bosser
-se coucher
 dormir
 éclairer
 emmener
 emporter
 s'endormir
 sonner
-se réveiller
 venir
 tricher
 crayon
@@ -184,7 +181,6 @@ chose
 forme
 carré
 rond
-pâte à modeler
 tampon
 livre
 histoire
@@ -192,7 +188,6 @@ bibliothèque
 image
 album
 tire
-bande dessinée
 conte
 dictionnaire
 magazine
@@ -254,7 +249,6 @@ décorer
 découper
 demander
 démolir
-se dépêcher
 dessiner
 dire
 discuter
@@ -288,7 +282,6 @@ répondre
 sentir
 souligner
 tailler
-se taire
 tenir
 terminer
 toucher
@@ -335,7 +328,6 @@ prêter
 priver
 promettre
 punir
-se quitter
 raconter
 refuser
 séparer
@@ -430,7 +422,6 @@ second
 seconde
 manquer
 partir
-se poser
 rouler
 tendre
 transporter
@@ -451,7 +442,6 @@ au-dessous
 autour
 vite
 ville
-à côté
 acrobate
 arrêt
 arrière
@@ -466,3 +456,29 @@ football
 handball
 sport
 basketball
+mourir
+yeux
+frère
+mot
+avant
+comprendre
+ainsi
+cent
+te
+terre
+ni
+tête
+vivre
+réponse
+nuage
+besoin
+connaître
+au
+ci
+trembler
+bouche
+spectacle
+sentir
+libre
+liberté
+rocher
