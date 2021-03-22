@@ -63,7 +63,7 @@ $ python3 TypeeTypo.py
 Each time the program runs, it checks whether you have all necessary packages installed. The first time, it may therefore take up to a minute before launching. Afterwards, the process only takes a second and the output will look like this:
 ```
 $ python3 TypeeTypo.py 
-[INPUT] You are about to install 7 packages, would you like to proceed (y/n): [LOG] Looking for numpy
+[LOG] Looking for numpy
 [LOG] numpy is already installed, skipping...
 [LOG] Looking for matplotlib
 [LOG] matplotlib is already installed, skipping...
