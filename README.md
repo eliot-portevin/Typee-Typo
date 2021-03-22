@@ -46,7 +46,11 @@ Python 3.8.3
 ```
 Next you will need the git command which you can download from this website: https://git-scm.com/download/win. The graphical interface will guide you through the installation.
 
-Now you have all the dependencies needed to copy this repository, but not all to run it yet. You may now navigate to the folder you wish to have your game in with the  ```cd```  command. If you do not know how this works, please watch this video that will inform you about it: https://www.youtube.com/watch?v=zZshUoznlH4. You will need to be able to do this in order to run the program.
+Now you have all the dependencies needed to copy this repository, but not all to run it yet. You may now navigate to the folder you wish to have your game in with the  ```cd```  command. If you do not know how this works, please watch this video that will inform you about it: https://www.youtube.com/watch?v=zZshUoznlH4. You will need to be able to do this in order to run the program. Next you can run this command to download the repository:
+```
+$ git clone https://github.com/eliot-portevin/Typee-Typo.git
+```
+You now have all the needed files to run this program in you new Typee-Typo directory! Go to the Running part to see how you can use it now.
 
 ## Running
 The running process is the exact same for every Operating System, run:
