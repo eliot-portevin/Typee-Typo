@@ -37,6 +37,8 @@ You now have all the needed files to run this program in you new Typee-Typo dire
 If you're running Linux (congrats' because I wouldn't expect any of you to), I'm assuming you know how to use the command line, clone a repository and run a python script, so I'm not including any directions for you. If you're really in a struggle though, just take a look at the MacOS tutorial, it's literaly the same thing. To install git, just run ```sudo apt install git```if you're on a debian-based machine, or ```yay -S git```if you're on Arch (I'm not sure about this one though).
 
 ### Windows
+Now to all the windows users, I am terribly sorry but I don't have a windows machine at home, and when I tried running this program on some friend's computers, it didn't work. You are welome to give it a go, but I can't guarantee that it will work...
+
 *(All the commands listed below have to be run in the Command Line application without the dollar sign, which just shows the beginning of the commands. Don't be scared of the terminal, you'll have to use it anyways to run the program, and you'll look like a hacker.)*
 
 Firstly, install Python if it isn't installed yet. To check if you have it, you can run ```$ python --version```. If it outputs that python is not a recognised command, then install from this website: https://www.python.org/downloads/windows/ by following their instructions. Pay attention to which version you're installing: from my experience, versions lower than Python 3.0 didn't work... After that, if you run the previously mentionned command, you should get an output similar to this:
