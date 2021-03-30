@@ -82,7 +82,6 @@ $ python3 TypeeTypo.py
 
 $
 ```
-When you are playing, you have to type all the words you see as fast as you can. You'll never run out, it's set so there's always a certain number of them on the screen. Each time you have typed one word, you can press [SPACE] to make it count. Those of you who have already tried 10fastfingers.com will be familiar with this principle.
+When you are playing, you have to type all the words you see as fast as you can. You'll never run out, it's set so there's always a certain number of them on the screen. Each time you have typed one word, you can press [SPACE] to make it count. Those of you who have already tried 10fastfingers.com will be familiar with this principle. Pressing [ESC] in game shows a little pop-up with some stats and pauses the game. To quit, you just have to close the window, which can be inconvenient if you want to play several times in a row but hey, I'm not Elon Musk so this isn't optimal.
 
 All your scores are saved automatically at Media/score.csv . If you wish to delete a score because you didn't take the test seriously, you can just delete the last line. However, please don't play around with them because as mentionned above, your performances will be the support for my Maturarbeit. You can also add words in the word lists in the Media folder (words.txt for English, mots.txt for French and Wörtern.txt for German). If you wish to change the ingame music, just download your own music file, name it "game_music.aiff" and replace the old file (you may have to convert a .mp3 or .wav file to .aiff if downloaded in those formats, otherwise it won't work).
-Btw, pressing [ESC] in game pauses the game.
