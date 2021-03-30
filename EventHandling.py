@@ -25,10 +25,11 @@ def quit_game(game):
     gwpm = int(GameScreen.get_words_per_min(game))
     today = str(date.today())
     time = game.seconds
-    with open('Media/score.csv', mode='a') as scores:
-        scores = csv.writer(scores, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    if gwpm != 0:
+        with open('Media/score.csv', mode='a') as scores:
+            scores = csv.writer(scores, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-        scores.writerow([str(today), int(gwpm), int(time)])
+            scores.writerow([str(today), int(gwpm), int(time)])
 
     pygame.quit()
     sys.exit(0)

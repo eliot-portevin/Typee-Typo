@@ -13,9 +13,12 @@ pygame.init()
 def get_words_per_min(game):
     one_min = 60
     gwpm = str(game.gross_words_per_min)
-    average_chars = game.characters_typed / game.avg_word_length
-    average_time = game.seconds / one_min
-    gwpm = round(average_chars / average_time)
+    if game.characters_typed == 0:
+        gwpm = 0
+    else:
+        average_chars = game.characters_typed / game.avg_word_length
+        average_time = game.seconds / one_min
+        gwpm = round(average_chars / average_time)
     return gwpm
 
 def get_gwpm_text_size(game):

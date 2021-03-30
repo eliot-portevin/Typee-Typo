@@ -8,7 +8,6 @@ autres
 jeu
 jeux
 coin
-déguisement
 bricolage
 garage
 train
@@ -33,12 +32,10 @@ vingt
 trente
 cour
 nourriture
-gâteaux
 crêpes
 salade
 fruits
 fruit
-légume
 soupe
 cantine
 animal
