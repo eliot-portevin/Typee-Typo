@@ -149,7 +149,10 @@ class Game():
         self.information_hovering = pygame.image.load('Media/information.png')
         self.mute_hovering = pygame.image.load("Media/mute_hovering.png")
         self.quit_hovering = pygame.image.load('Media/quit_hovering.png')
-        call(["python3", "evolution.py"])
+        try:
+            call(["python3", "evolution.py"])
+        except:
+            call(["python", "evolution.py"])
         self.evolution = pygame.image.load('score.png')
 
 
