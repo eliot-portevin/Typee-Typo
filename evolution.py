@@ -10,9 +10,6 @@ import matplotlib.ticker as mticker
 rcParams['mathtext.fontset'] = 'cm'
 rcParams['font.family'] = 'STIXGeneral'
 
-
-DataFiles = ['Media/score.csv']
-
 ax1 = plt.subplot(1, 1, 1)
 
 high_score = score = time = xValues =  dates = []
@@ -31,22 +28,20 @@ n = len(dates)-1
 
 xlabels = [dates[1], dates[round(n/5)], dates[round(n/5*2)], dates[round(n/5*3)], dates[round(n/5*4)], dates[n]]
 
-for i in range(len(DataFiles)):
-    #Appending Values from csv
-    score, time = np.loadtxt(DataFiles[i], skiprows=1, usecols=(1, 2), unpack=True, delimiter= ';')
+score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter= ';')
     
-    high_score = max(score)
-    xValues = np.arange(len(score))
-    average = np.mean(score)
-    median = np.median(score)
+high_score = max(score)
+xValues = np.arange(len(score))
+average = np.mean(score)
+median = np.median(score)
 
-    #Plotting values
-    ax1.plot(xValues, score, color = 'darkslategrey', label = 'Scores')
-    ax1.axhline(y = average, linestyle = 'dashdot', label = 'Mean', color = 'teal')
-    ax1.axhline(y = high_score, linestyle = 'dashdot', label = 'High Score', color = 'indigo', alpha = 0.7)
-    ax1.axhline(y = median, linestyle = ':', label = 'Median', color = 'peru', alpha = 1)
-    plt.xticks(rotation=25, ha = 'right', color = 'k', alpha = 0.9)
-    plt.yticks(color = 'k', alpha = 0.9)
+#Plotting values
+ax1.plot(xValues, score, color = 'darkslategrey', label = 'Scores')
+ax1.axhline(y = average, linestyle = 'dashdot', label = 'Mean', color = 'teal')
+ax1.axhline(y = high_score, linestyle = 'dashdot', label = 'High Score', color = 'indigo', alpha = 0.7)
+ax1.axhline(y = median, linestyle = ':', label = 'Median', color = 'peru', alpha = 1)
+plt.xticks(rotation=25, ha = 'right', color = 'k', alpha = 0.9)
+plt.yticks(color = 'k', alpha = 0.9)
 
 
 #Setting labels
