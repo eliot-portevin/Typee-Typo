@@ -20,9 +20,12 @@ high_score = score = time = xValues =  dates = []
 with open('Media/score.csv', 'r') as file:
     reader = csv.reader(file, delimiter = ';')
     for row in reader:
-        date = str(row[0])
-        date = date.replace('-', '/')
-        dates.append(date)
+        if len(row) == 0:
+            continue
+        else:
+            date = str(row[0])
+            date = date.replace('-', '/')
+            dates.append(date)
 
 n = len(dates)-1
 
