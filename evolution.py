@@ -28,8 +28,12 @@ n = len(dates)-1
 
 xlabels = [dates[1], dates[round(n/5)], dates[round(n/5*2)], dates[round(n/5*3)], dates[round(n/5*4)], dates[n]]
 
-score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter= ';')
+if len(dates)==4:
+    score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter= ';')
     
+else:
+    score, time = np.loadtxt('Media/score.csv', skiprows=4, usecols=(1, 2), unpack=True, delimiter= ';')
+
 high_score = max(score)
 xValues = np.arange(len(score))
 average = np.mean(score)
