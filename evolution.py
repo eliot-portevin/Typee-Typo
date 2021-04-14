@@ -28,7 +28,7 @@ n = len(dates)-1
 
 xlabels = [dates[1], dates[round(n/5)], dates[round(n/5*2)], dates[round(n/5*3)], dates[round(n/5*4)], dates[n]]
 
-if len(dates)==4:
+if len(dates)<=5:
     score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter= ';')
     
 else:
