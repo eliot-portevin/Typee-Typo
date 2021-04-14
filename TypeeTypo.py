@@ -152,7 +152,13 @@ class Game():
         try:
             call(["python3", "evolution.py"])
         except:
+            continue
+
+        try:
             call(["python", "evolution.py"])
+        except:
+            continue
+            
         self.evolution = pygame.image.load('score.png')
 
 
