@@ -130,7 +130,7 @@ class PlayerInput:
                         pass
                     else:
                         PlayerInput.key_shift(self)
-                elif event.key == pl.K_SPACE:
+                elif event.key == pl.K_SPACE or event.key == pl.K_RETURN:
                     return True
                 elif event.key == pl.K_ESCAPE:
                     pass
