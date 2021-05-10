@@ -65,4 +65,3 @@ ax1.legend(loc='upper right', ncol=1, prop={'size': 9})
 
 #Showing and saving
 plt.savefig('score.png', bbox_inches='tight')
-plt.show()
