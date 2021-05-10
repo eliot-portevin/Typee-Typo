@@ -379,6 +379,17 @@ def start_screen(screen, game):
 #####################
 #        Main       #
 #####################
+def restart2():
+    game = Game()
+    screen = game.set_screen()
+    game.set_player_input()
+
+    menu_screen(screen, game)
+    start_screen(screen, game)
+    GameScreen.play(screen, game)
+    if game.restart_variable:
+        restart()
+
 def restart():
     game = Game()
     screen = game.set_screen()
@@ -388,7 +399,7 @@ def restart():
     start_screen(screen, game)
     GameScreen.play(screen, game)
     if game.restart_variable:
-        main()
+        restart2()
 
 def main():
     game = Game()
