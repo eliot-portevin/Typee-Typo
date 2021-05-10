@@ -122,16 +122,6 @@ def draw_buttons(self, screen, game_button=False):
             Bub.Bubbles.draw_button_bubble(button, screen, self)
     return
 
-DataFiles = ['Media/score.csv']
-high_score = []
-
-for i in range(len(DataFiles)):
-
-    scores, time = np.loadtxt(DataFiles[i], skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
-    high_score = str(max(scores))
-
-    #score = "Your High Score:   " + high_score + " WPM"
-
 def draw_pause(screen, game):
     pause_surface = pygame.Surface((1000,800), pygame.SRCALPHA)
     pause_surface.fill((0,0,0,100))
@@ -149,7 +139,7 @@ def draw_pause(screen, game):
 
     quit_text1 = quit_font.render('If you wish to quit this game, you can simply close the', 0, (255, 255, 255))
     quit_text2 = quit_font.render('window. Your score will be saved automatically ._.', 0, (255, 255, 255))
-    score = resume_font.render("Your High Score:   " + high_score + " WPM", 0, (255, 255, 255))
+    score = resume_font.render("Your High Score:   " + game.high_score + " WPM", 0, (255, 255, 255))
 
     screen.blit(quit_text1, (200, 220))
     screen.blit(quit_text2, (225, 250))
