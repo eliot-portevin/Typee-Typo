@@ -122,7 +122,7 @@ def draw_buttons(self, screen, game_button=False):
             Bub.Bubbles.draw_button_bubble(button, screen, self)
     return
 
-def get_high_score(game):
+def get_high_score():
     DataFiles = ['Media/score.csv']
 
     for i in range(len(DataFiles)):
@@ -132,7 +132,7 @@ def get_high_score(game):
     return high_score
 
 def draw_pause(screen, game):
-    high_score = get_high_score(game)
+    high_score = get_high_score()
     pause_surface = pygame.Surface((1000,800), pygame.SRCALPHA)
     pause_surface.fill((0,0,0,100))
     screen.blit(pause_surface, (0,0))

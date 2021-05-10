@@ -137,6 +137,22 @@ class Button:
         return
 
     def draw(self, screen, game, hover=None):
+        for i in range(len(DataFiles)):
+
+            scores, time = np.loadtxt(DataFiles[i], skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
+            high_score = str(max(scores))
+            sum_time = np.sum(time)
+            if (sum_time > 3600):
+                total_time = round(sum_time / 3600, 2)
+                times = "You have spent " + str(total_time) + " hours on the game."
+            elif (sum_time > 60):
+                total_time = round(sum_time / 60, 2)
+                times = "You have spent " + str(total_time) + " minutes on the game."
+            else:
+                times = "You have spent " + str(total_time) + " seconds on the game."
+
+            score = "Your High Score:   " + high_score + " WPM"
+
         if (self.visible):
             if (self.hovering):
                 if (self.text == "1st"):
@@ -162,25 +178,6 @@ DataFiles = ['Media/score.csv']
 scores = []
 high_score = []
 
-for i in range(len(DataFiles)):
-
-    scores, time = np.loadtxt(DataFiles[i], skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
-    high_score = str(max(scores))
-    sum_time = np.sum(time)
-    if (sum_time>3600):
-        total_time = round(sum_time/3600, 2)
-        times = "You have spent " + str(total_time) + " hours on the game."
-    elif (sum_time>60):
-        total_time = round(sum_time/60, 2)
-        times = "You have spent " + str(total_time) + " minutes on the game."
-    else:
-        times = "You have spent " + str(total_time) + " seconds on the game."
-
-
-    score = "Your High Score:   " + high_score + " WPM"
-
-def draw_evolution(surface, rect):
-    surface.blit(evolution, evolution_rect)
 
 def draw_rect_alpha(surface, color, rect):
     shape_surf = pygame.Surface(pygame.Rect(rect).size, pygame.SRCALPHA)
