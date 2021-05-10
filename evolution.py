@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import rcParams
 import datetime
 import csv
-import matplotlib.ticker as mticker
+from matplotlib.ticker import FormatStrFormatter
 
 rcParams['mathtext.fontset'] = 'cm'
 rcParams['font.family'] = 'STIXGeneral'
@@ -38,6 +38,7 @@ average = np.mean(score)
 median = np.median(score)
 
 #Plotting values
+ax1.xaxis.set_major_formatter(FormatStrFormatter('%.0f'))
 ax1.plot(xValues, score, color = 'darkslategrey', label = 'Scores')
 ax1.axhline(y = average, linestyle = 'dashdot', label = 'Mean', color = 'teal')
 ax1.axhline(y = high_score, linestyle = 'dashdot', label = 'High Score', color = 'indigo', alpha = 0.7)
