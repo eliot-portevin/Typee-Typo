@@ -150,15 +150,6 @@ class Game():
         self.information_hovering = pygame.image.load('Media/information.png')
         self.mute_hovering = pygame.image.load("Media/mute_hovering.png")
         self.quit_hovering = pygame.image.load('Media/quit_hovering.png')
-        try:
-            call(["python3", "evolution.py"])
-        except:
-            print('')
-
-        try:
-            call(["python", "evolution.py"])
-        except:
-            print('')
             
         self.evolution = pygame.image.load('score.png')
         self.restart_variable = False
@@ -325,6 +316,15 @@ def draw_menu_screen(screen, game, buttons):
     return
 
 def menu_screen(screen, game):
+    try:
+        call(["python3", "evolution.py"])
+    except:
+        print('')
+
+    try:
+        call(["python", "evolution.py"])
+    except:
+        print('')
     buttons = game.get_menu_buttons()
     while(True):
         game.clock.tick(game.max_FPS)
