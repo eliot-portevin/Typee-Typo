@@ -203,5 +203,17 @@ def check_game_events(game, buttons):
                 else:
                     game.words_moving = True
                     game.is_paused = False
+            if game.is_paused:
+                if event.key == pygame.K_r:
+                    game.restart_variable = True
+                    gwpm = int(GameScreen.get_words_per_min(game))
+                    today = str(date.today())
+                    time = game.seconds
+                    if gwpm != 0:
+                        with open('Media/score.csv', mode='a') as scores:
+                            scores = csv.writer(scores, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+                            scores.writerow([str(today), int(gwpm), int(time)])
+
     update_player_input(game, events)
     return True

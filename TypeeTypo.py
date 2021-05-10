@@ -160,6 +160,7 @@ class Game():
             print('')
             
         self.evolution = pygame.image.load('score.png')
+        self.restart_variable = False
 
 
 
@@ -378,6 +379,17 @@ def start_screen(screen, game):
 #####################
 #        Main       #
 #####################
+def restart():
+    game = Game()
+    screen = game.set_screen()
+    game.set_player_input()
+
+    menu_screen(screen, game)
+    start_screen(screen, game)
+    GameScreen.play(screen, game)
+    if game.restart_variable:
+        main()
+
 def main():
     game = Game()
     screen = game.set_screen()
@@ -387,6 +399,9 @@ def main():
     menu_screen(screen, game)
     start_screen(screen, game)
     GameScreen.play(screen, game)
+    if game.restart_variable:
+        restart()
+
 
 if __name__ == "__main__":
     main()

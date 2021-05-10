@@ -140,17 +140,19 @@ def draw_pause(screen, game):
     resume_font = pygame.font.SysFont('Monospace', 25, bold=True)
     quit_font = pygame.font.SysFont('Monospace', 15, bold=True)
     resume_text = resume_font.render('To resume your game, press [ESC] again.', 0, (255, 255, 255))
+    restart_text = resume_font.render('Press R to restart.', 0, (255, 255, 255))
     resume_surface = pygame.Surface((740, 400), pygame.SRCALPHA)
     resume_surface.fill((0, 0, 0, 100))
     screen.blit(resume_surface, (100, 100))
-    screen.blit(resume_text, (150, 120))
+    screen.blit(resume_text, (475 - resume_text.get_width() / 2, 120))
+    screen.blit(restart_text, (475 - restart_text.get_width() / 2, 150))
 
     quit_text1 = quit_font.render('If you wish to quit this game, you can simply close the', 0, (255, 255, 255))
     quit_text2 = quit_font.render('window. Your score will be saved automatically ._.', 0, (255, 255, 255))
     score = resume_font.render("Your High Score:   " + high_score + " WPM", 0, (255, 255, 255))
 
-    screen.blit(quit_text1, (200, 200))
-    screen.blit(quit_text2, (225, 230))
+    screen.blit(quit_text1, (200, 220))
+    screen.blit(quit_text2, (225, 250))
     screen.blit(score, (245, 450))
 
     return
@@ -176,7 +178,7 @@ def play(screen, game):
         game.play_music(game.game_music)
     buttons = None
     game.seconds = 0
-    while(True):
+    while(not game.restart_variable):
         game.clock.tick(game.max_FPS)
         game.frame_count += 1
         if not (game.check_game_events(buttons)):
