@@ -163,13 +163,6 @@ class Game():
         self.evolution = pygame.image.load('score.png')
         self.restart_variable = False
 
-        self.DataFiles = ['Media/score.csv']
-        self.high_score = []
-
-        for i in range(len(self.DataFiles)):
-            self.scores, self.time = np.loadtxt(self.DataFiles[i], skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
-            self.high_score = str(max(self.scores))
-
 
 
     #####################
