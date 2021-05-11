@@ -126,7 +126,7 @@ apporter
 appuyer
 s'asseoir
 attendre
-bâiller
+bailler
 bosser
 dormir
 eclairer
