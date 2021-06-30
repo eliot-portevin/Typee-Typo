@@ -380,15 +380,6 @@ def draw_menu_screen(screen, game, buttons):
     return
 
 def menu_screen(screen, game):
-    '''try:
-        call(["python3", "evolution.py"])
-    except:
-        print('')
-
-    try:
-        call(["python", "evolution.py"])
-    except:
-        print('')'''
     buttons = game.get_menu_buttons()
     while(True):
         game.clock.tick(game.max_FPS)
