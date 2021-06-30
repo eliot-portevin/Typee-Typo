@@ -179,11 +179,7 @@ class Game():
 
         n = len(dates) - 1
 
-        if len(dates) > 5:
-            score, time = np.loadtxt('Media/score.csv', skiprows=4, usecols=(1, 2), unpack=True, delimiter=';')
-
-        else:
-            score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
+        score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
 
         high_score = max(score)
         xValues = np.arange(len(score))
@@ -209,10 +205,6 @@ class Game():
 
         # Setting grid and legend
         ax1.grid(True)
-        grid_x_ticks = np.arange(0, xValues[len(xValues) - 1] + 2, 1)
-        grid_y_ticks = np.arange(round(min(score) - 10, -1), high_score + 10, 2)
-        ax1.set_xticks(grid_x_ticks, minor=True)
-        ax1.set_yticks(grid_y_ticks, minor=True)
         ax1.grid(which='minor', alpha=0.2, linestyle='--')
         ax1.legend(loc='upper right', ncol=1, prop={'size': 9})
 
