@@ -159,15 +159,19 @@ class Game():
         self.evolution = pygame.image.load('score.png')
         self.restart_variable = False
 
+        self.high_score = 0
+        self.xValues = []
+        self.average = 0
+        self.median = 0
+
     def make_graph(self):
         rcParams['mathtext.fontset'] = 'cm'
         rcParams['font.family'] = 'STIXGeneral'
 
         ax1 = plt.subplot(1, 1, 1)
+        scores = time = dates = self.xValues = []
 
-        high_score = score = time = xValues = dates = []
-
-        with open('Media/score.csv', 'r') as file:
+        '''with open('Media/score.csv', 'r') as file:
             reader = csv.reader(file, delimiter=';')
             for row in reader:
                 if len(row) == 0:
@@ -175,23 +179,21 @@ class Game():
                 else:
                     date = str(row[0])
                     date = date.replace('-', '/')
-                    dates.append(date)
+                    dates.append(date)'''
 
-        n = len(dates) - 1
+        scores, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
 
-        score, time = np.loadtxt('Media/score.csv', skiprows=1, usecols=(1, 2), unpack=True, delimiter=';')
-
-        high_score = max(score)
-        xValues = np.arange(len(score))
-        average = np.mean(score)
-        median = np.median(score)
+        self.high_score = max(scores)
+        self.xValues = np.arange(len(scores))
+        self.average = np.mean(scores)
+        self.median = np.median(scores)
 
         # Plotting values
         ax1.xaxis.set_major_formatter(FormatStrFormatter('%.0f'))
-        ax1.plot(xValues, score, color='darkslategrey', label='Scores', linewidth=2)
-        ax1.axhline(y=average, linestyle='dashdot', label='Mean', color='teal')
-        ax1.axhline(y=high_score, linestyle='dashdot', label='High Score', color='indigo', alpha=0.7)
-        ax1.axhline(y=median, linestyle=':', label='Median', color='peru', alpha=1)
+        ax1.plot(self.xValues, scores, color='darkslategrey', label='Scores', linewidth=2)
+        ax1.axhline(y=self.average, linestyle='dashdot', label='Mean', color='teal')
+        ax1.axhline(y=self.high_score, linestyle='dashdot', label='High Score', color='indigo', alpha=0.7)
+        ax1.axhline(y=self.median, linestyle=':', label='Median', color='peru', alpha=1)
         plt.xticks(ha='right', color='k', alpha=0.9)
         plt.yticks(color='k', alpha=0.9)
 
@@ -201,7 +203,7 @@ class Game():
         ax1.xaxis.set_label_coords(1.05, -0.06)
         ax1.set_ylabel('Score in WPM', rotation=0, fontsize=12, fontweight='bold')
         ax1.yaxis.set_label_coords(0, 1.035)
-        ax1.fill_between(xValues, score, average, color='teal', alpha=0.3)
+        ax1.fill_between(self.xValues, scores, self.average, color='teal', alpha=0.3)
 
         # Setting grid and legend
         ax1.grid(True)
@@ -210,7 +212,12 @@ class Game():
 
         # Showing and saving
         plt.savefig('score.png', bbox_inches='tight')
-
+        self.evolution = pygame.image.load('score.png')
+        self.high_score = 0
+        self.average = 0
+        self.median = 0
+        scores = time = dates = self.xValues = []
+        plt.clf()
 
     #####################
     #      Getters      #
@@ -397,7 +404,7 @@ def draw_screen(screen, game, start_screen=False):
     game.clock.tick(game.max_FPS)
     game.frame_count += 1
     game.draw_bg_image(screen)
-    if (start_screen):
+    if start_screen:
         game.blink_text(screen, game.start_prompt, start_screen)
     else:
         draw_title(screen, game)
